@@ -1,0 +1,26 @@
+---
+import { Astro } from "astro";
+import { siteConfig } from "../config/site";
+
+const currentPath = Astro.url.pathname;
+---
+
+<nav>
+  <a href="/" class="site-name">{siteConfig.name}</a>
+  <ul class="nav-menu">
+    <li>
+      <a href="/" class={`menu-link ${currentPath === "/" ? "active" : ""}`}
+        >{siteConfig.navigation.home}</a
+      >
+    </li>
+   
+    <li>
+      <a
+        href="/contact"
+        class={`menu-link ${currentPath.startsWith("/contact") ? "active" : ""}`}
+        >{siteConfig.navigation.contact}</a
+      >
+    </li>
+    
+  </ul>
+</nav>
