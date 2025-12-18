@@ -1,4 +1,4 @@
-# Astro Cartoon Portfolio
+# Portfolio
 
 A modern, responsive portfolio website built with Astro 5, featuring a beautiful cartoon-style design with smooth animations, interactive project carousel, blog system, and comment integration.
 
